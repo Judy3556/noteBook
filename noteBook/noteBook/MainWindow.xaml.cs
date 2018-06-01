@@ -24,5 +24,20 @@ namespace noteBook
         {
             InitializeComponent();
         }
+
+        private void OpenBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SaveBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SaveasBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
