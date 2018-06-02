@@ -128,10 +128,10 @@ namespace noteBook
 
         private void LightBtn_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
-            Textarea.Background = Brushes.LightGray;
+            Textarea.Background = Brushes.White;
             Textarea.Foreground = Brushes.Gray;
-            Textarea.BorderBrush = Brushes.LightGray;
-            TitleBlock.Background = Brushes.LightGray;
+            Textarea.BorderBrush = Brushes.White;
+            TitleBlock.Background = Brushes.White;
             MinimizeBtn.Foreground = Brushes.Gray;
             MaximizeBtn.Foreground = Brushes.Gray;
             ExitBtn.Foreground = Brushes.Gray;
