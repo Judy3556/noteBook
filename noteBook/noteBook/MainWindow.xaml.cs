@@ -100,6 +100,7 @@ namespace noteBook
             }
         }
 
+        // 改變字體大小
         private void SmallsizeBtn_Click(object sender, RoutedEventArgs e)
         {
             Textarea.FontSize = 15;
@@ -115,6 +116,7 @@ namespace noteBook
             Textarea.FontSize = 25;
         }
 
+        // 深色主題
         private void DarkBtn_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             Textarea.Background = Brushes.Gray;
@@ -126,6 +128,7 @@ namespace noteBook
             ExitBtn.Foreground = Brushes.White;
         }
 
+        // 淺色主題
         private void LightBtn_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             Textarea.Background = Brushes.White;
@@ -138,6 +141,7 @@ namespace noteBook
 
         }
 
+        //窗口移動
         private void TitleBlock_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
@@ -146,11 +150,13 @@ namespace noteBook
             }
         }
 
+        //窗口的縮放
         private void MinimizeBtn_Click(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
         }
 
+        // 窗口的放大與還原
         private void MaximizeBtn_Click(object sender, RoutedEventArgs e)
         {
             if (this.WindowState == WindowState.Maximized)

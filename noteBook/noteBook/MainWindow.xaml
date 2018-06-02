@@ -7,11 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" x:Name="title" Height="550" Width="800" Opacity="0.99" Background="Transparent" Cursor="" Foreground="White" WindowStyle="None" Visibility="Visible" >
     <Grid Opacity="0.99">
-        
-        
+      
         <!--定義版面區塊-->
         <Grid.ColumnDefinitions>
-            
             <ColumnDefinition Width="150"></ColumnDefinition>
             <ColumnDefinition></ColumnDefinition>
         </Grid.ColumnDefinitions>
@@ -27,7 +25,6 @@
             <RowDefinition Height="200"></RowDefinition>
         </Grid.RowDefinitions>
         
-
         <!--按鈕區內容-->
         <Rectangle Grid.Row ="0" Grid.RowSpan="7" Fill="Black" x:Name="LeiftBox" RenderTransformOrigin="0.25,0.4" Margin="0 0 0 0" ></Rectangle>
         <StackPanel Grid.Row="0" Grid.RowSpan="7">
@@ -56,7 +53,6 @@
             <Button Width="30" Margin="10 0 " x:Name="MaximizeBtn" Click="MaximizeBtn_Click" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Foreground="Gray" FontSize="20">▭</Button>
             <Button Width="30" Margin="10 0 " x:Name="ExitBtn" Click="ExitBtn_Click" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Foreground="Gray" FontSize="25">×</Button>
         </StackPanel>
-
         
     </Grid>
 </Window>
