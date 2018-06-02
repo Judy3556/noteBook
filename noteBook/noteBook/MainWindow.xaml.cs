@@ -39,7 +39,7 @@ namespace noteBook
                 System.IO.File.WriteAllText(dlg.FileName, Textarea.Text);
                 fileName = dlg.FileName;
                 saveText = thisText; ;
-                //Title.Text = dlg.SafeFileName + ".txt";
+                TitlenameTxt.Text = dlg.SafeFileName + ".txt";
             }
         }
 
@@ -52,7 +52,7 @@ namespace noteBook
                 Textarea.Text = System.IO.File.ReadAllText(dlg.FileName);
                 fileName = dlg.FileName;
                 saveText = Textarea.Text;
-                //Title.Text = dlg.SafeFileName + ".txt";
+                TitlenameTxt.Text = dlg.SafeFileName + ".txt";
             }
         }
 
@@ -119,14 +119,53 @@ namespace noteBook
         {
             Textarea.Background = Brushes.Gray;
             Textarea.Foreground = Brushes.White;
-            
+            Textarea.BorderBrush = Brushes.Gray;
+            TitleBlock.Background = Brushes.Gray;
+            MinimizeBtn.Foreground = Brushes.White;
+            MaximizeBtn.Foreground = Brushes.White;
+            ExitBtn.Foreground = Brushes.White;
         }
 
         private void LightBtn_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             Textarea.Background = Brushes.LightGray;
-            Textarea.Foreground = Brushes.Black;
+            Textarea.Foreground = Brushes.Gray;
+            Textarea.BorderBrush = Brushes.LightGray;
+            TitleBlock.Background = Brushes.LightGray;
+            MinimizeBtn.Foreground = Brushes.Gray;
+            MaximizeBtn.Foreground = Brushes.Gray;
+            ExitBtn.Foreground = Brushes.Gray;
 
+        }
+
+        private void TitleBlock_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                this.DragMove();
+            }
+        }
+
+        private void MinimizeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.WindowState = WindowState.Minimized;
+        }
+
+        private void MaximizeBtn_Click(object sender, RoutedEventArgs e)
+        {
+            if (this.WindowState == WindowState.Maximized)
+            {
+                this.WindowState = WindowState.Normal; //设置窗口还原
+            }
+            else
+            {
+                this.WindowState = WindowState.Maximized; //设置窗口最大化
+            }
+        }
+
+        private void ExitBtn_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
         }
     }
 }

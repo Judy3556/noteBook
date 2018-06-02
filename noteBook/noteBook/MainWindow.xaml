@@ -5,8 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:noteBook"
         mc:Ignorable="d"
-        Title="MainWindow" x:Name="title" Height="550" Width="800">
-    <Grid>
+        Title="MainWindow" x:Name="title" Height="550" Width="800" Opacity="0.99" Background="Transparent" Cursor="" Foreground="White" WindowStyle="None" Visibility="Visible" >
+    <Grid Opacity="0.99">
         
         <!--定義版面區塊-->
         <Grid.ColumnDefinitions>
@@ -24,6 +24,7 @@
             <RowDefinition></RowDefinition>
             <RowDefinition Height="200"></RowDefinition>
         </Grid.RowDefinitions>
+        
 
         <!--按鈕區內容-->
         <Rectangle Grid.Row ="0" Grid.RowSpan="7" Fill="Black" x:Name="LeiftBox" RenderTransformOrigin="0.25,0.4" Margin="0 0 0 0" ></Rectangle>
@@ -44,8 +45,16 @@
         </StackPanel>
         
         <!--打字區內容-->
-        <Border CornerRadius="15 15 0 0" Grid.Column="3" Grid.RowSpan="7" Margin="0">
-            <TextBox x:Name="Textarea" FontSize="20" Background="LightGray" BorderBrush="LightGray" Foreground="Black" Opacity=" 1" ></TextBox>
+        <Border CornerRadius="15 15 0 0" Grid.Column="1" Grid.RowSpan="7" Margin="0">
+            <TextBox x:Name="Textarea" FontSize="20" Margin="0 55 0 0" Background="LightGray" BorderBrush="LightGray" Foreground="Gray" Opacity="1" ></TextBox>
         </Border>
+        <StackPanel Grid.Row="0" Grid.Column="1" Background="LightGray" Orientation="Horizontal" x:Name="TitleBlock" MouseMove="TitleBlock_MouseMove">
+            <TextBlock Width="300" Margin="15 0 0 0" TextAlignment="Left" FontSize="18" x:Name="TitlenameTxt" Foreground="Gray"></TextBlock>
+            <Button Width="30" Margin="200 0 0 10" x:Name="MinimizeBtn" Click="MinimizeBtn_Click" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Foreground="Gray" FontSize="20">▂</Button>
+            <Button Width="30" Margin="10 0 0 0" x:Name="MaximizeBtn" Click="MaximizeBtn_Click" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Foreground="Gray" FontSize="20">▭</Button>
+            <Button Width="30" Margin="10 0 0 0" x:Name="ExitBtn" Click="ExitBtn_Click" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Foreground="Gray" FontSize="25">×</Button>
+        </StackPanel>
+
+        
     </Grid>
 </Window>
