@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:noteBook"
         mc:Ignorable="d"
-        Title="MainWindow" Height="550" Width="800">
+        Title="MainWindow" x:Name="title" Height="550" Width="800">
     <Grid>
         
         <!--定義版面區塊-->
@@ -38,15 +38,14 @@
                 <Button Margin="5 3 0 0" x:Name="BigsizeBtn" Click="BigsizeBtn_Click" FontSize="20" Background="Black" BorderBrush="Black" Foreground="Gray">A</Button>
             </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Ellipse Width="20" Height="20" Margin="20 30 0 0" Fill="Gray" Stroke="LightGray" StrokeThickness="3"></Ellipse>
-                <Ellipse Width="20" Height="20" Margin="10 30 0 0 " Fill="White" Stroke="LightGray" StrokeThickness="3"></Ellipse>
+                <Ellipse x:Name="DarkBtn" MouseLeftButtonDown="DarkBtn_MouseLeftButtonDown" Width="20" Height="20" Margin="20 30 0 0" Fill="Gray" Stroke="LightGray" StrokeThickness="3"></Ellipse>
+                <Ellipse x:Name="LightBtn" MouseLeftButtonDown="LightBtn_MouseLeftButtonDown" Width="20" Height="20" Margin="10 30 0 0 " Fill="White" Stroke="LightGray" StrokeThickness="3"></Ellipse>
             </StackPanel>
         </StackPanel>
         
         <!--打字區內容-->
         <Border CornerRadius="15 15 0 0" Grid.Column="3" Grid.RowSpan="7" Margin="0">
-            <TextBox x:Name="Textarea" FontSize="15" Background="LightGray" BorderBrush="LightGray" Foreground="Black" Opacity=" 1" ></TextBox>
-            
+            <TextBox x:Name="Textarea" FontSize="20" Background="LightGray" BorderBrush="LightGray" Foreground="Black" Opacity=" 1" ></TextBox>
         </Border>
     </Grid>
 </Window>
