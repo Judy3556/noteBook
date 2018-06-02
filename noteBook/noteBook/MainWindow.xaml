@@ -25,17 +25,28 @@
             <RowDefinition Height="200"></RowDefinition>
         </Grid.RowDefinitions>
 
-        <!--內容-->
+        <!--按鈕區內容-->
         <Rectangle Grid.Row ="0" Grid.RowSpan="7" Fill="Black" x:Name="LeiftBox" RenderTransformOrigin="0.25,0.4" Margin="0 0 0 0" ></Rectangle>
         <StackPanel Grid.Row="0" Grid.RowSpan="7">
             <Border CornerRadius="15,15,1,1" Margin="1" ></Border>
-            <Button  x:Name="OpenBtn" Click="OpenBtn_Click" Margin="0 70 0 0" Background="Black" BorderBrush="Black" Foreground="Gray">Open</Button>
-            <Button x:Name="SaveBtn" Click="SaveBtn_Click" Margin="30" Background="Black" BorderBrush="Black" Foreground="Gray">Save</Button>
-            <Button x:Name="SaveasBtn" Click="SaveasBtn_Click" Margin="10" Background="Black" BorderBrush="Black" Foreground="Gray">Save as</Button>
+            <Button  x:Name="OpenBtn" Click="OpenBtn_Click" Margin="0 70 65 0" Background="Black" BorderBrush="Black" Foreground="Gray">Open</Button>
+            <Button x:Name="SaveBtn" Click="SaveBtn_Click" Margin="0 35 70 0" Background="Black" BorderBrush="Black" Foreground="Gray">Save</Button>
+            <Button x:Name="SaveasBtn" Click="SaveasBtn_Click" Margin="0 35 60 0" Background="Black" BorderBrush="Black" Foreground="Gray">Save as</Button>
+            <StackPanel Orientation="Horizontal" Margin="20 20 20 0">
+                <Button Margin="0 11 10 0" x:Name="SmallsizeBtn" Click="SmallsizeBtn_Click" FontSize="10" Background="Black" BorderBrush="Black" Foreground="Gray">A</Button>
+                <Button Margin="0 7 10 0" x:Name="ModelsizeBtn" Click="ModelsizeBtn_Click" FontSize="15" Background="Black" BorderBrush="Black" Foreground="Gray" >A</Button>
+                <Button Margin="5 3 0 0" x:Name="BigsizeBtn" Click="BigsizeBtn_Click" FontSize="20" Background="Black" BorderBrush="Black" Foreground="Gray">A</Button>
+            </StackPanel>
             <StackPanel Orientation="Horizontal">
-                <Ellipse Width="20" Height="20" Margin="20 20 0 0" Fill="Gray" Stroke="LightGray" StrokeThickness="3"></Ellipse>
-                <Ellipse Width="20" Height="20" Margin="20 20 0 0 " Fill="White" Stroke="LightGray" StrokeThickness="3"></Ellipse>
+                <Ellipse Width="20" Height="20" Margin="20 30 0 0" Fill="Gray" Stroke="LightGray" StrokeThickness="3"></Ellipse>
+                <Ellipse Width="20" Height="20" Margin="10 30 0 0 " Fill="White" Stroke="LightGray" StrokeThickness="3"></Ellipse>
             </StackPanel>
         </StackPanel>
+        
+        <!--打字區內容-->
+        <Border CornerRadius="15 15 0 0" Grid.Column="3" Grid.RowSpan="7" Margin="0">
+            <TextBox x:Name="Textarea" FontSize="15" Background="LightGray" BorderBrush="LightGray" Foreground="Black" Opacity=" 1" ></TextBox>
+            
+        </Border>
     </Grid>
 </Window>

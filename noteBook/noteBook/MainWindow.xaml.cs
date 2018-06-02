@@ -39,5 +39,20 @@ namespace noteBook
         {
 
         }
+
+        private void SmallsizeBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void ModelsizeBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void BigsizeBtn_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
