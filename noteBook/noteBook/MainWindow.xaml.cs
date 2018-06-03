@@ -169,6 +169,7 @@ namespace noteBook
             }
         }
 
+        // 關閉視窗
         private void ExitBtn_Click(object sender, RoutedEventArgs e)
         {
             this.Close();
