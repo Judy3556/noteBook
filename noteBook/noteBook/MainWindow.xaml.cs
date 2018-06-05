@@ -126,6 +126,7 @@ namespace noteBook
             MinimizeBtn.Foreground = Brushes.White;
             MaximizeBtn.Foreground = Brushes.White;
             ExitBtn.Foreground = Brushes.White;
+            EmptyTb.Background = Brushes.Gray;
         }
 
         // 淺色主題
@@ -138,6 +139,7 @@ namespace noteBook
             MinimizeBtn.Foreground = Brushes.Gray;
             MaximizeBtn.Foreground = Brushes.Gray;
             ExitBtn.Foreground = Brushes.Gray;
+            EmptyTb.Background = Brushes.White;
 
         }
 
