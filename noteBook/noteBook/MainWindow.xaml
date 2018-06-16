@@ -41,7 +41,7 @@
 
             <StackPanel Orientation="Horizontal">
                 <Ellipse x:Name="DarkBtn" MouseLeftButtonDown="DarkBtn_MouseLeftButtonDown" Width="20" Height="20" Margin="20 30 0 0" Fill="Gray" Stroke="LightGray" StrokeThickness="3"></Ellipse>
-                <Ellipse x:Name="LightBtn" MouseLeftButtonDown="LightBtn_MouseLeftButtonDown" Width="20" Height="20" Margin="10 30 0 0 " Fill="White" Stroke="LightGray" StrokeThickness="3"></Ellipse>
+                <Ellipse x:Name="LightBtn" MouseLeftButtonDown="LightBtn_MouseLeftButtonDown" Width="20" Height="20" Margin="10 30 0 0 " Fill="White" Stroke="LightGray" StrokeThickness="3" ></Ellipse>
             </StackPanel>
         </StackPanel>
 
@@ -57,7 +57,7 @@
             <TextBlock Width="300" Margin="15 0 0 0" TextAlignment="Left" FontSize="18" x:Name="TitlenameTxt" Foreground="Gray"></TextBlock>
             <Button Width="30" Margin="200 0 0 10" x:Name="MinimizeBtn" Click="MinimizeBtn_Click" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Foreground="Gray" FontSize="20">▂</Button>
             <Button Width="30" Margin="10 0 " x:Name="MaximizeBtn" Click="MaximizeBtn_Click" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Foreground="Gray" FontSize="20">▭</Button>
-            <Button Width="30" Margin="10 0 " x:Name="ExitBtn" Click="ExitBtn_Click" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Foreground="Gray" FontSize="25">×</Button>
+            <Button Width="30" Margin="10 0 " x:Name="ExitBtn" Click="ExitBtn_Click" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Foreground="Gray" FontSize="25" >×</Button>
         </StackPanel>
 
     </Grid>

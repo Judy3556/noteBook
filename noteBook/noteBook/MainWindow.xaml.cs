@@ -104,16 +104,25 @@ namespace noteBook
         private void SmallsizeBtn_Click(object sender, RoutedEventArgs e)
         {
             Textarea.FontSize = 15;
+            SmallsizeBtn.Foreground = Brushes.White;
+            ModelsizeBtn.Foreground = Brushes.Gray;
+            BigsizeBtn.Foreground = Brushes.Gray;
         }
 
         private void ModelsizeBtn_Click(object sender, RoutedEventArgs e)
         {
             Textarea.FontSize = 20;
+            SmallsizeBtn.Foreground = Brushes.Gray;
+            ModelsizeBtn.Foreground = Brushes.White ;
+            BigsizeBtn.Foreground = Brushes.Gray;
         }
 
         private void BigsizeBtn_Click(object sender, RoutedEventArgs e)
         {
             Textarea.FontSize = 25;
+            SmallsizeBtn.Foreground = Brushes.Gray ;
+            ModelsizeBtn.Foreground = Brushes.Gray;
+            BigsizeBtn.Foreground = Brushes.White ;
         }
 
         // 深色主題
@@ -127,6 +136,8 @@ namespace noteBook
             MaximizeBtn.Foreground = Brushes.White;
             ExitBtn.Foreground = Brushes.White;
             EmptyTb.Background = Brushes.Gray;
+            DarkBtn.Stroke = Brushes.DarkGray;
+            LightBtn.Stroke = Brushes.LightGray;
         }
 
         // 淺色主題
@@ -140,6 +151,8 @@ namespace noteBook
             MaximizeBtn.Foreground = Brushes.Gray;
             ExitBtn.Foreground = Brushes.Gray;
             EmptyTb.Background = Brushes.White;
+            DarkBtn.Stroke = Brushes.LightGray;
+            LightBtn.Stroke = Brushes.DarkGray;
 
         }
 
@@ -161,13 +174,16 @@ namespace noteBook
         // 窗口的放大與還原
         private void MaximizeBtn_Click(object sender, RoutedEventArgs e)
         {
+            //设置窗口还原
             if (this.WindowState == WindowState.Maximized)
             {
-                this.WindowState = WindowState.Normal; //设置窗口还原
+                this.WindowState = WindowState.Normal; 
             }
+
+            //设置窗口最大化
             else
             {
-                this.WindowState = WindowState.Maximized; //设置窗口最大化
+                this.WindowState = WindowState.Maximized; 
             }
         }
 
@@ -176,5 +192,6 @@ namespace noteBook
         {
             this.Close();
         }
+
     }
 }
