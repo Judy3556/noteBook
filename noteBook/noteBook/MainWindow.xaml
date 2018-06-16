@@ -5,9 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:noteBook"
         mc:Ignorable="d"
-        Title="MainWindow" x:Name="title" Height="550" Width="800" Opacity="0.99" Background="Transparent" Cursor="" Foreground="White" WindowStyle="None" Visibility="Visible" >
+        Title="MainWindow" x:Name="title" Height="550" Width="800" Opacity="0.99" Background="Transparent" Cursor="" Foreground="White" WindowStyle="None" Visibility="Visible" AllowsTransparency="True" >
     <Grid Opacity="0.99">
-      
+
         <!--定義版面區塊-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="150"></ColumnDefinition>
@@ -24,27 +24,27 @@
             <RowDefinition></RowDefinition>
             <RowDefinition Height="200"></RowDefinition>
         </Grid.RowDefinitions>
-        
+
         <!--按鈕區內容-->
-        <Rectangle Grid.Row ="0" Grid.RowSpan="7" Fill="Black" x:Name="LeiftBox" RenderTransformOrigin="0.25,0.4" Margin="0 0 0 0" ></Rectangle>
+        <Rectangle Grid.Row ="0" Grid.RowSpan="7" Fill="Black" x:Name="LeiftBox" RenderTransformOrigin="0.25,0.4"  ></Rectangle>
         <StackPanel Grid.Row="0" Grid.RowSpan="7">
             <Border CornerRadius="15,15,1,1" Margin="1" ></Border>
             <Button  x:Name="OpenBtn" Click="OpenBtn_Click" Margin="0 70 65 0" Background="Black" BorderBrush="Black" Foreground="Gray">Open</Button>
             <Button x:Name="SaveBtn" Click="SaveBtn_Click" Margin="0 35 70 0" Background="Black" BorderBrush="Black" Foreground="Gray">Save</Button>
             <Button x:Name="SaveasBtn" Click="SaveasBtn_Click" Margin="0 35 60 0" Background="Black" BorderBrush="Black" Foreground="Gray">Save as</Button>
-            
+
             <StackPanel Orientation="Horizontal" Margin="20 20 20 0">
                 <Button Margin="0 11 10 0" x:Name="SmallsizeBtn" Click="SmallsizeBtn_Click" FontSize="10" Background="Black" BorderBrush="Black" Foreground="Gray">A</Button>
                 <Button Margin="0 7 10 0" x:Name="ModelsizeBtn" Click="ModelsizeBtn_Click" FontSize="15" Background="Black" BorderBrush="Black" Foreground="Gray" >A</Button>
                 <Button Margin="5 3 0 0" x:Name="BigsizeBtn" Click="BigsizeBtn_Click" FontSize="20" Background="Black" BorderBrush="Black" Foreground="Gray">A</Button>
             </StackPanel>
-            
+
             <StackPanel Orientation="Horizontal">
                 <Ellipse x:Name="DarkBtn" MouseLeftButtonDown="DarkBtn_MouseLeftButtonDown" Width="20" Height="20" Margin="20 30 0 0" Fill="Gray" Stroke="LightGray" StrokeThickness="3"></Ellipse>
                 <Ellipse x:Name="LightBtn" MouseLeftButtonDown="LightBtn_MouseLeftButtonDown" Width="20" Height="20" Margin="10 30 0 0 " Fill="White" Stroke="LightGray" StrokeThickness="3"></Ellipse>
             </StackPanel>
         </StackPanel>
-        
+
         <!--打字區內容-->
         <Border CornerRadius="15 15 0 0" Grid.Column="1" Grid.RowSpan="7" Margin="0">
             <TextBox x:Name="Textarea" FontSize="20" Margin="0 55 0 0" Background="White" BorderBrush="White" Foreground="Gray" Opacity="1" AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
@@ -59,6 +59,6 @@
             <Button Width="30" Margin="10 0 " x:Name="MaximizeBtn" Click="MaximizeBtn_Click" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Foreground="Gray" FontSize="20">▭</Button>
             <Button Width="30" Margin="10 0 " x:Name="ExitBtn" Click="ExitBtn_Click" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Foreground="Gray" FontSize="25">×</Button>
         </StackPanel>
-        
+
     </Grid>
 </Window>
