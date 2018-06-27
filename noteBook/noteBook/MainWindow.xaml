@@ -96,8 +96,9 @@
         </StackPanel>
 
         <!--打字區內容-->
-        <Border CornerRadius="15 15 0 0" Grid.Column="1" Grid.RowSpan="7" Margin="0">
-            <TextBox x:Name="Textarea" FontSize="20" Margin="0 55 0 0" Background="White" BorderBrush="White" Foreground="Gray" Opacity="1" AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
+        <Border CornerRadius="15 15 0 0" Grid.Column="1" Grid.RowSpan="7" Margin="0" BorderBrush="White">
+
+            <TextBox x:Name="Textarea" FontSize="20" Margin="0 55 0 0" Background="White" BorderBrush="White" SelectionBrush="Transparent" CaretBrush="Transparent" Foreground="Gray" Opacity="1" AcceptsReturn="True" TextWrapping="Wrap"></TextBox>
         </Border>
 
         <TextBlock x:Name="EmptyTb" Grid.Row="0" Grid.Column="1" Background="White"></TextBlock>
