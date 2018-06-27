@@ -29,7 +29,9 @@
         <Rectangle Grid.Row ="0" Grid.RowSpan="7" Fill="Black" x:Name="LeiftBox" RenderTransformOrigin="0.25,0.4"  ></Rectangle>
         <StackPanel Grid.Row="0" Grid.RowSpan="7">
             <Border CornerRadius="15,15,1,1" Margin="1" ></Border>
-            <Button  x:Name="OpenBtn" Click="OpenBtn_Click" Margin="0 70 65 0" Background="Black" BorderBrush="Black" Foreground="Gray">Open</Button>
+            <Button  x:Name="OpenBtn" Click="OpenBtn_Click" Margin="0 70 65 0" Background="Black" BorderBrush="Black" Foreground="Gray">Open
+
+            </Button>
             <Button x:Name="SaveBtn" Click="SaveBtn_Click" Margin="0 35 70 0" Background="Black" BorderBrush="Black" Foreground="Gray">Save</Button>
             <Button x:Name="SaveasBtn" Click="SaveasBtn_Click" Margin="0 35 60 0" Background="Black" BorderBrush="Black" Foreground="Gray">Save as</Button>
 

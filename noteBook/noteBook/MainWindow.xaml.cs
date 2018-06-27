@@ -58,6 +58,7 @@ namespace noteBook
 
         private void OpenBtn_Click(object sender, RoutedEventArgs e)
         {
+            
             if (saveText != thisText)
                 if (MessageBox.Show("Do you want to Save?", "Save or Not", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
                 {
