@@ -29,6 +29,8 @@
         <Rectangle Grid.Row ="0" Grid.RowSpan="7" Fill="Black" x:Name="LeiftBox" RenderTransformOrigin="0.25,0.4"  ></Rectangle>
         <StackPanel Grid.Row="0" Grid.RowSpan="7">
             <Border CornerRadius="15,15,1,1" Margin="1" ></Border>
+            
+            <!--打開按鈕-->
             <Button  x:Name="OpenBtn" Click="OpenBtn_Click" Margin="0 70 65 0" Background="Black" HorizontalAlignment="Center" BorderBrush="Black" Foreground="Gray">Open
                 <Button.Template>
                     <ControlTemplate TargetType="Button" >
@@ -36,6 +38,8 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
+            
+            <!--保存按鈕-->
             <Button x:Name="SaveBtn" Click="SaveBtn_Click" Margin="0 35 70 0" HorizontalAlignment="Center" Background="Black" BorderBrush="Black" Foreground="Gray">Save
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -43,6 +47,8 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
+            
+            <!--另存為按鈕-->
             <Button x:Name="SaveasBtn" Click="SaveasBtn_Click" Margin="0 35 60 0" HorizontalAlignment="Center" Background="Black" BorderBrush="Black" Foreground="Gray">Save as
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -51,7 +57,10 @@
                 </Button.Template>
             </Button>
 
+            <!--調整字體大小-->
             <StackPanel Orientation="Horizontal" Margin="20 20 20 0">
+                
+                <!--字體最小號-->
                 <Button Margin="0 11 10 0" x:Name="SmallsizeBtn" Click="SmallsizeBtn_Click" HorizontalAlignment="Center" FontSize="10" Background="Black" BorderBrush="Black" Foreground="Gray">A
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
@@ -59,6 +68,8 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
+                
+                <!--字體中號-->
                 <Button Margin="0 7 10 0" x:Name="ModelsizeBtn" Click="ModelsizeBtn_Click" FontSize="15" Background="Black" BorderBrush="Black" Foreground="Gray" >A
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
@@ -66,6 +77,8 @@
                         </ControlTemplate>
                     </Button.Template>
                 </Button>
+                
+                <!--字體大號-->
                 <Button Margin="5 3 0 0" x:Name="BigsizeBtn" Click="BigsizeBtn_Click" HorizontalAlignment="Center" FontSize="20" Background="Black" BorderBrush="Black" Foreground="Gray">A
                     <Button.Template>
                         <ControlTemplate TargetType="Button">
@@ -75,6 +88,7 @@
                 </Button>
             </StackPanel>
 
+            <!--主體顏色按鈕-->
             <StackPanel Orientation="Horizontal">
                 <Ellipse x:Name="DarkBtn" MouseLeftButtonDown="DarkBtn_MouseLeftButtonDown" Width="20" Height="20" Margin="20 30 0 0" Fill="Gray" Stroke="LightGray" StrokeThickness="3"></Ellipse>
                 <Ellipse x:Name="LightBtn" MouseLeftButtonDown="LightBtn_MouseLeftButtonDown" Width="20" Height="20" Margin="10 30 0 0 " Fill="White" Stroke="DarkGray" StrokeThickness="3" ></Ellipse>
@@ -91,6 +105,8 @@
         <!--上方的關閉縮小按鈕以及標題-->
         <StackPanel HorizontalAlignment="Right"  Grid.Row="0" Grid.Column="1" Background="White" Orientation="Horizontal" x:Name="TitleBlock" MouseMove="TitleBlock_MouseMove">
             <TextBlock Width="300" Margin="15 0 0 0" TextAlignment="Left" FontSize="18" x:Name="TitlenameTxt" Foreground="Gray"></TextBlock>
+            
+            <!--最小化按鈕-->
             <Button Width="30" Margin="200 9 0 10" x:Name="MinimizeBtn" Click="MinimizeBtn_Click" HorizontalAlignment="Center" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Foreground="Gray" FontSize="20">▂
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -98,6 +114,8 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
+            
+            <!--最大化按鈕-->
             <Button Width="28" Margin="10 13 " x:Name="MaximizeBtn" Click="MaximizeBtn_Click" HorizontalAlignment="Center" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Foreground="Gray" FontSize="20">▭
                 <Button.Template>
                     <ControlTemplate TargetType="Button">
@@ -105,6 +123,8 @@
                     </ControlTemplate>
                 </Button.Template>
             </Button>
+            
+            <!--最大化按鈕-->
             <Button Width="30" Margin="10 10 " x:Name="ExitBtn" Click="ExitBtn_Click" HorizontalAlignment="Stretch" Background="Transparent" BorderBrush="Transparent" BorderThickness="0" Foreground="Gray" FontSize="25" >×
                 <Button.Template>
                     <ControlTemplate TargetType="Button">

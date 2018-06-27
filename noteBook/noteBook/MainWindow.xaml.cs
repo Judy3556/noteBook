@@ -30,6 +30,7 @@ namespace noteBook
             InitializeComponent();
         }
 
+        // 保存
         void Save()
         {
             Microsoft.Win32.SaveFileDialog dlg = new Microsoft.Win32.SaveFileDialog();
@@ -43,6 +44,7 @@ namespace noteBook
             }
         }
 
+        // 打開
         void Open()
         {
             Microsoft.Win32.OpenFileDialog dlg = new Microsoft.Win32.OpenFileDialog();
@@ -56,6 +58,7 @@ namespace noteBook
             }
         }
 
+        // 打開新文檔
         private void OpenBtn_Click(object sender, RoutedEventArgs e)
         {
             
@@ -75,6 +78,7 @@ namespace noteBook
             }
         }
 
+        // 保存文檔
         private void SaveBtn_Click(object sender, RoutedEventArgs e)
         {
             if (fileName == newFileName)
@@ -88,6 +92,7 @@ namespace noteBook
             }
         }
 
+        // 另存新檔
         private void SaveasBtn_Click(object sender, RoutedEventArgs e)
         {
             Microsoft.Win32.SaveFileDialog dig = new Microsoft.Win32.SaveFileDialog();
@@ -157,7 +162,7 @@ namespace noteBook
 
         }
 
-        //窗口移動
+        // 窗口移動
         private void TitleBlock_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.LeftButton == MouseButtonState.Pressed)
@@ -166,7 +171,7 @@ namespace noteBook
             }
         }
 
-        //窗口的縮放
+        // 窗口的縮放
         private void MinimizeBtn_Click(object sender, RoutedEventArgs e)
         {
             this.WindowState = WindowState.Minimized;
@@ -175,13 +180,13 @@ namespace noteBook
         // 窗口的放大與還原
         private void MaximizeBtn_Click(object sender, RoutedEventArgs e)
         {
-            //设置窗口还原
+            // 设置窗口还原
             if (this.WindowState == WindowState.Maximized)
             {
                 this.WindowState = WindowState.Normal; 
             }
 
-            //设置窗口最大化
+            // 设置窗口最大化
             else
             {
                 this.WindowState = WindowState.Maximized; 
